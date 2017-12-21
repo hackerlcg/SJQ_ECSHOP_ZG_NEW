@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_b">
+
+    <include layout="@layout/top_view" />
+
+    <com.ecjia.component.view.XListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:scrollbars="none"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/null_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="@dimen/dim250"
+            android:layout_height="@dimen/dim250"
+            android:background="@drawable/income_null"
+            android:layout_marginBottom="@dimen/dim10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_login_hint_color"
+            android:textSize="@dimen/txt30"
+            android:text="@string/null_sales_detail"/>
+    </LinearLayout>
+</LinearLayout>

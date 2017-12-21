@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/log_id"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt38" />
+
+        <TextView
+            android:id="@+id/tv_action_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015-10-21 14:24:21"
+            android:textColor="@color/text_color"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/txt33" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/log_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/txt30" />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/center_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="50dp"
+        android:background="@color/line_long_dark" />
+    <View
+        android:id="@+id/buttom_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+</LinearLayout>

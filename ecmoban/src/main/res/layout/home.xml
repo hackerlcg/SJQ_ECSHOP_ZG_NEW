@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_b"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <com.ecjia.component.view.XListView
+            android:id="@+id/home_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:divider="#00000000"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:layout_marginTop="@dimen/dim30"
+            >
+
+            <ImageView
+                android:id="@+id/iv_change_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="@dimen/dim20"
+                android:paddingBottom="@dimen/dim20"
+                android:layout_marginLeft="@dimen/dim25"
+                android:src="@drawable/list"
+                />
+
+            <ImageView
+                android:id="@+id/iv_top_zxing"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dim25"
+                android:src="@drawable/zxing"
+                />
+
+        </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim110"/>
+
+
+</LinearLayout>

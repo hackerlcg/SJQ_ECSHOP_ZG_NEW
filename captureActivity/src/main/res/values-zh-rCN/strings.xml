@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanning_unusual">扫描异常</string>
+    <string name="scanning_exist_unusual">扫描的结果存在异常</string>
+    <string name="scanning_finish">完成</string>
+    <string name="scanning_zxing">扫一扫</string>
+    <string name="scanning_zxing_content">对准二维码框内即可扫描</string>
+    <string name="scanning_back_home">回到程序</string>
+</resources>

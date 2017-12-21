@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/layout_bg_f8"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_fragment"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_onsale"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim90"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dim30"
+        android:layout_marginRight="@dimen/dim30"
+        android:layout_marginBottom="@dimen/px20"
+        android:layout_marginTop="@dimen/px20"
+        android:minWidth="@dimen/dim400"
+        android:text="发布商品"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/txt32"
+        android:background="@drawable/selector_login_button" />
+
+</LinearLayout>

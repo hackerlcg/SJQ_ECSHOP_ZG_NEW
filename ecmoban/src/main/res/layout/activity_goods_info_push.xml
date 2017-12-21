@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/ic_head"
+            layout="@layout/top_view"/>
+
+        <EditText
+            android:id="@+id/et_input_info"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/ic_head"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:gravity="top"
+            android:hint="非必填，详细描述您的商品"
+            android:inputType="textMultiLine"/>
+
+        <TextView
+            android:id="@+id/tv_cash_btn"
+            style="@style/CashBottomBtn"
+            android:onClick="@{onClick}"
+            android:text="确定"/>
+    </RelativeLayout>
+
+</layout>

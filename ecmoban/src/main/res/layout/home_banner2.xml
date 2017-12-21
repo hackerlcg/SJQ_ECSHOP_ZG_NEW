@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dim180"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/top_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim0"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_y_income"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/txt35"
+            android:textColor="@color/_f98a07"
+            />
+        <TextView
+            android:id="@+id/tv_y_order"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/txt35"
+            android:textColor="@color/_f98a07"
+            />
+        <TextView
+            android:id="@+id/tv_y_custom"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/txt35"
+            android:textColor="@color/_f98a07"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim0"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/tv_y_income2"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:text="@string/yest_income"
+            android:textSize="@dimen/txt25"
+            android:textColor="@color/_333333"
+            />
+        <TextView
+            android:id="@+id/tv_y_order2"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:text="@string/yest_order"
+            android:textSize="@dimen/txt25"
+            android:textColor="@color/_333333"
+            />
+        <TextView
+            android:id="@+id/tv_y_custom2"
+            android:layout_width="@dimen/dim0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:text="@string/yest_custom"
+            android:textSize="@dimen/txt25"
+            android:textColor="@color/_333333"
+            />
+
+        </LinearLayout>
+
+</LinearLayout>

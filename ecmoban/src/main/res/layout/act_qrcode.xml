@@ -1,0 +1,19 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_dark"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_view"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim60"
+        android:layout_marginLeft="@dimen/dim80"
+        android:layout_marginRight="@dimen/dim80"
+        android:src="@drawable/qr_code"
+        />
+
+</LinearLayout>

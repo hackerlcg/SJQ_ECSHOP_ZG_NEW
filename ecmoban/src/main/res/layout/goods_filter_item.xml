@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout 
+        android:id="@+id/filter_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim90"
+        android:layout_weight="1"
+        android:background="@drawable/selecter_newitem_press"
+        android:orientation="horizontal"
+        >
+    <TextView 
+        android:id="@+id/filter_name"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textColor="@color/text_login_color"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dim40"
+        android:textSize="@dimen/txt30"
+        />
+
+        <LinearLayout
+            android:id="@+id/ll_right_filter"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            >
+            <ImageView
+                android:layout_width="@dimen/dim30"
+                android:layout_height="@dimen/dim30"
+                android:layout_marginRight="@dimen/dim20"
+                android:src="@drawable/header_right_arrow" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="@dimen/dim40"
+        android:background="@color/line_long_dark" />
+
+</LinearLayout>
+</LinearLayout>

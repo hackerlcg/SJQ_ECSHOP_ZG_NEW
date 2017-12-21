@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:visibility="gone"
+            android:background="@color/line_long_dark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim110"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_brands_del"
+                    android:layout_width="@dimen/dim110"
+                    android:layout_height="@dimen/dim110"
+                    android:src="@drawable/select_del"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dim35"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/txt34"
+                        android:textColor="@color/text_login_color"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_short_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim35"
+            android:background="@color/line_long_dark"
+            />
+        <View
+            android:id="@+id/bottom_long_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:visibility="gone"
+            android:background="@color/line_long_dark"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim220"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_brands_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/my_red"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="#FFAACC"
+                    android:gravity="center"
+                    android:text="@string/delete_text"
+                    android:textSize="@dimen/txt35"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

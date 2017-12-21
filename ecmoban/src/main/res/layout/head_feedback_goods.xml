@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#eeeeee"
+              android:orientation="vertical">
+
+    <!--商品咨询-->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="#ffffffff"
+        android:id="@+id/feedback_goods"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/feedback_goods_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/feedback_goods_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:lines="2"
+                android:textColor="#aaaaaa"
+                android:ellipsize="end"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:gravity="top"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:id="@+id/feedback_goods_price"/>
+
+                <TextView
+                    android:minWidth="80dp"
+                    android:layout_marginBottom="3dp"
+                    android:id="@+id/feedback_goods_sendurl"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#ffffffff"
+                    android:text="@string/consult_sendlink"
+                    android:textSize="13dp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_public_bg"
+                    android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

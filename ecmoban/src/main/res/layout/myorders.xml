@@ -1,0 +1,316 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/order_search_topview"
+        layout="@layout/top_view"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_order_searchlayout"
+            android:gravity="center"
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim96"
+            android:paddingLeft="@dimen/dim20"
+            android:paddingRight="@dimen/dim20">
+
+            <TextView
+                android:gravity="center_vertical|right"
+                android:id="@+id/tv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/my_dark"
+                android:textSize="@dimen/txt30"/>
+
+            <View
+                android:layout_gravity="center"
+                android:id="@+id/fragment_order_searchlayout_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_searchview_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim66"/>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fragment_order_searchlayout_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@drawable/main_search_icon_gray"
+                    android:layout_width="@dimen/dim40"
+                    android:layout_height="@dimen/dim40"/>
+
+                <TextView
+                    android:id="@+id/et_order_search"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/txt26"
+                    android:hint="@string/search_input_orders"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_login_color"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim80"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/wait_pay"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/bg_theme_color"
+                    />
+                <View
+                    android:id="@+id/line_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color" />
+
+                </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/wait_send"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/text_login_hint_color"
+                    />
+                <View
+                    android:id="@+id/line_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/is_send"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/text_login_hint_color"
+                    />
+                <View
+                    android:id="@+id/line_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/is_finish"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/text_login_hint_color"
+                    />
+                <View
+                    android:id="@+id/line_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color"
+                    android:visibility="invisible"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/refund"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/text_login_hint_color"
+                    />
+                <View
+                    android:id="@+id/line_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/is_close"
+                    android:textSize="@dimen/txt30"
+                    android:textColor="@color/text_login_hint_color"
+                    />
+                <View
+                    android:id="@+id/line_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim3"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_theme_color"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+    <FrameLayout
+        android:id="@+id/fl_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="@dimen/dim250"
+                    android:layout_height="@dimen/dim250"
+                    android:src="@drawable/order_null"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_null"
+                    android:textColor="@color/text_login_hint_color"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dim110"
+                    android:textSize="@dimen/txt30" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_notnull"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+
+            <com.ecjia.component.view.XListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+            <com.ecjia.component.view.XListView
+                android:id="@+id/listview_return"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:visibility="gone"
+                android:dividerHeight="0dp" />
+
+        </LinearLayout>
+    </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim110"/>
+
+</LinearLayout>

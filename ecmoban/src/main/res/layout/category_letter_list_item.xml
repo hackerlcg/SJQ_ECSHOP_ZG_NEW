@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim50"
+        android:background="@color/color_b"
+        android:paddingBottom="@dimen/dim4"
+        android:paddingLeft="@dimen/dim30"
+        android:paddingRight="@dimen/dim20"
+        android:paddingTop="@dimen/dim4"
+        android:textColor="@color/filter_text_color"
+        android:textSize="@dimen/dim28"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/item_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dim110"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/new_textColor"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dim30"
+                android:paddingRight="@dimen/dim0"
+                android:textSize="@dimen/dim32"
+                android:background="@color/white" />
+            <TextView
+                android:id="@+id/parent_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim50"
+                android:textColor="@color/filter_text_color"
+                android:gravity="top"
+                android:paddingLeft="@dimen/dim30"
+                android:paddingRight="@dimen/dim0"
+                android:textSize="@dimen/dim26"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:background="@color/white" />
+
+            </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/iv_category_click"
+            android:layout_width="@dimen/dim100"
+            android:layout_height="@dimen/dim100"
+            android:padding="@dimen/dim30"
+            android:src="@drawable/now_shop"
+            android:visibility="invisible"
+            />
+
+        </LinearLayout>
+
+    <View
+        android:id="@+id/bottom_short_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="@dimen/dim30"
+        android:visibility="visible"
+        android:background="@color/line_long_dark" />
+    <View
+        android:id="@+id/bottom_long_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:visibility="gone"
+        android:background="@color/line_long_dark" />
+</LinearLayout>

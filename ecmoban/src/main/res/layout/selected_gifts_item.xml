@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim220"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/iv_gift"
+                        android:layout_width="@dimen/dim180"
+                        android:layout_height="@dimen/dim180"
+                        android:layout_margin="@dimen/dim20"
+                        android:background="@drawable/default_image" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dim20"
+                    android:layout_marginBottom="@dimen/dim20"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/txt32"
+                        android:textColor="@color/text_login_color"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_origin_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/txt28"
+                        android:textColor="@color/text_color_share"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:text="@string/gift_price"
+                            android:textSize="@dimen/txt30"
+                            android:textColor="@color/text_login_color"
+                            />
+                        <TextView
+                            android:id="@+id/tv_gifts_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center_vertical"
+                            android:layout_marginLeft="@dimen/dim10"
+                            android:singleLine="true"
+                            android:ellipsize="end"
+                            android:textSize="@dimen/txt30"
+                            android:textColor="@color/my_red"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_lastline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:background="@color/line_long_dark"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

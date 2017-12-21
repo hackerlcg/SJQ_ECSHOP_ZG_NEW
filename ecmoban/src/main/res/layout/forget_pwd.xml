@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            >
+                <ListView
+                    android:id="@+id/shop_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:divider="#FFCCCCCC"
+                    android:dividerHeight="0.1dp"
+                    android:layout_above="@+id/btn_next"
+                    android:footerDividersEnabled="false"
+                    android:headerDividersEnabled="false"
+                    ></ListView>
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim90"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dim40"
+                android:layout_marginRight="@dimen/dim40"
+                android:layout_marginBottom="@dimen/dim60"
+                android:layout_marginTop="@dimen/dim30"
+                android:layout_alignParentBottom="true"
+                android:minWidth="@dimen/dim400"
+                android:text="@string/next"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt40"
+                android:background="@drawable/selector_login_button"
+                />
+
+        </RelativeLayout>
+
+</LinearLayout>

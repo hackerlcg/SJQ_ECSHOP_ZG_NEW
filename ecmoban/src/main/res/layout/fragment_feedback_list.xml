@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/color_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_view" />
+
+    <com.ecjia.component.view.LeftSlidingListView
+        android:id="@+id/feedback_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dim110"
+        android:scrollbars="none"
+        android:background="@color/color_b"
+        android:divider="@null">
+    </com.ecjia.component.view.LeftSlidingListView>
+    <include
+        android:id="@+id/null_page"
+        layout="@layout/null_feedback_page"/>
+</LinearLayout>

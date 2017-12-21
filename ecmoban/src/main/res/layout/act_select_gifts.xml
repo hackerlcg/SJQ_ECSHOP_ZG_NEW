@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_view"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:gravity="center_horizontal" >
+
+            <com.ecjia.component.view.SwipeListView2
+                android:id="@+id/slv_gifts_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:divider="@null"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                ></com.ecjia.component.view.SwipeListView2>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim120"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:background="@color/line_long_dark" />
+
+        <Button
+            android:id="@+id/btn_gift_save"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim80"
+            android:layout_marginLeft="@dimen/dim40"
+            android:layout_marginRight="@dimen/dim40"
+            android:layout_marginTop="@dimen/dim20"
+            android:text="@string/save_gift_list"
+            android:textSize="@dimen/txt36"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_login_button"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <LinearLayout android:layout_width="@dimen/px50"
+                  android:layout_height="match_parent"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical">
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="@dimen/px1"
+            android:layout_height="@dimen/px30"
+            android:background="@color/text_login_color"/>
+
+        <ImageView android:layout_width="@dimen/px30"
+                   android:layout_height="@dimen/px30"
+                   android:src="@drawable/invite_selected_bg"/>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="@dimen/px1"
+            android:layout_height="match_parent"
+            android:background="@color/text_login_color"/>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:paddingRight="@dimen/layout_marginLR"
+                      android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1"
+                          android:orientation="vertical"
+                          android:paddingBottom="@dimen/px20"
+                          android:paddingTop="@dimen/px25">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你已经确认收货"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/texte_size_16"/>
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:text="内容"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/texte_size_14"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px10"
+                    android:text="时间"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/texte_size_14"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_see"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/px50"
+                android:layout_marginTop="@dimen/px10"
+                android:background="@drawable/shape_check_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/px15"
+                android:paddingRight="@dimen/px15"
+                android:visibility="visible"
+                android:text="查看物流"/>
+
+
+        </LinearLayout>
+
+
+        <View android:layout_width="match_parent"
+              android:layout_height="@dimen/px1"
+              android:background="@color/text_login_color"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

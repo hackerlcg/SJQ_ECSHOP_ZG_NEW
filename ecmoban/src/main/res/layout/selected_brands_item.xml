@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:visibility="gone"
+            android:background="@color/line_long_dark"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim110"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dim30"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/txt34"
+                        android:textColor="@color/text_login_color"
+                        />
+
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottom_short_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim30"
+            android:background="@color/line_long_dark"
+            />
+        <View
+            android:id="@+id/bottom_long_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:visibility="gone"
+            android:background="@color/line_long_dark"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

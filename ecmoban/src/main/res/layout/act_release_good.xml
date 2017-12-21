@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_marginLR"
+                android:visibility="visible">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+                <GridView
+                    android:id="@+id/noScrollgridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px320"
+                    android:horizontalSpacing="@dimen/px1"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/px1"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+
+
+            <EditText
+                android:id="@+id/tv_good_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="start"
+                android:hint="请输入商品名称，最多50个字符-必填"
+                android:minHeight="@dimen/px130"
+                android:paddingBottom="@dimen/px15"
+                android:paddingLeft="@dimen/layout_marginLR"
+                android:paddingRight="@dimen/layout_marginLR"
+                android:paddingTop="@dimen/px15"
+                android:textColor="@color/text_login_color"
+                android:textColorHint="@color/text_login_hint_color"
+                android:textSize="@dimen/txt30"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品货号:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <EditText
+                    android:id="@+id/edit_good_num"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/layout_marginLR"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="点击设置-选填"
+                    android:maxLength="20"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品重量:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+                <EditText
+                    android:id="@+id/edit_good_weight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="点击设置-必填"
+                    android:inputType="numberDecimal"
+                    android:maxLength="20"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:gravity="center_horizontal|right"
+                    android:paddingRight="@dimen/dim30"
+                    android:text="单位：KG"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/ll_good_type"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品分类:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:id="@+id/tv_good_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|right"
+                    android:hint="点击设置-必填"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:layout_marginLeft="@dimen/dim40"
+                android:background="@color/line_long_dark"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_good_sizecolor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dim100"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dim10"
+                android:paddingTop="@dimen/dim10">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品规格:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:id="@+id/tv_good_sizecolor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|right"
+                    android:hint="点击设置-必填"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:src="@drawable/header_right_arrow"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:layout_marginLeft="@dimen/dim40"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/ll_good_price"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品价格:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:id="@+id/tv_good_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|right"
+                    android:hint="点击设置-必填"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:layout_marginLeft="@dimen/dim40"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/edit_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dim100"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="包邮:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <CheckBox
+                    android:id="@+id/cb_good_haveshippingfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px40"
+                    android:button="@drawable/selecter_geslock_checkboxbg"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim200"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="每个规格库存:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <EditText
+                    android:id="@+id/edit_good_totalcount"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/layout_marginLR"
+                    android:layout_weight="4"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="点击设置-必填"
+                    android:maxLength="20"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px20"
+                android:background="@color/layout_bg_f8"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+
+            <LinearLayout
+                android:id="@+id/ll_good_info"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="商品详情:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:id="@+id/tv_good_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|right"
+                    android:hint="点击设置-选填"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:maxLength="9"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+            <LinearLayout
+                android:id="@+id/ll_good_info_img"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim100"
+                android:background="@drawable/selecter_newitem_press"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dim140"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dim40"
+                    android:text="图片详情:"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center_horizontal|right"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim30"
+                    android:singleLine="true"
+                    android:maxLength="9"
+                    android:textColor="@color/text_login_hint_color"
+                    android:textSize="@dimen/txt30"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dim20"
+                    android:src="@drawable/header_right_arrow"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px80"
+                android:background="@color/layout_bg_f8"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selected_chart_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim90"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/dim30"
+            android:layout_marginRight="@dimen/dim30"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_button"
+            android:text="直接上架"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt32"/>
+
+        <Button
+            android:id="@+id/btn_right"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dim90"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/px20"
+            android:layout_marginLeft="@dimen/dim30"
+            android:layout_marginRight="@dimen/dim30"
+            android:layout_marginTop="@dimen/px20"
+            android:layout_weight="1"
+            android:background="@drawable/selector_login_button"
+            android:text="放到仓库"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt32"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

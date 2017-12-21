@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/search_item"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim90"
+        android:orientation="vertical"
+        android:background="@drawable/selecter_newitem_press"
+        >
+    <TextView 
+        android:id="@+id/history_name"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/text_login_color"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dim40"
+        android:textSize="@dimen/txt30"
+        />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:background="@color/line_long_dark" />
+    </LinearLayout>
+    
+
+</LinearLayout>

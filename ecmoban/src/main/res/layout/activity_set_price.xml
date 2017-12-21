@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/ic_head"
+            layout="@layout/top_view"/>
+
+        <RelativeLayout
+            android:id="@+id/div"
+            style="@style/DivItem"
+            android:layout_below="@id/ic_head"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_div_back">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/DivItemText"
+                android:text="本店售价"/>
+
+            <TextView
+                android:id="@+id/tv_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="单位：元"/>
+
+            <EditText
+                android:id="@+id/et_price"
+                style="@style/DivItemEdit"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/tv_y"
+                android:layout_toRightOf="@id/name"
+                android:digits="0987654321."
+                android:hint="必填"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:text=""/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cash_btn"
+            style="@style/CashBottomBtn"
+            android:layout_alignParentBottom="true"
+            android:text="确定"
+            android:onClick="@{onClick}"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/div"
+            android:layout_above="@id/tv_cash_btn"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/view_color"/>
+            <RelativeLayout
+                style="@style/DivItem"
+                android:layout_below="@id/ic_head">
+
+                <TextView
+                    style="@style/DivItemText"
+                    android:text="批发价格"/>
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:background="@color/view_color"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                tools:listitem="@layout/item_set_price"/>
+
+            <LinearLayout
+                android:id="@+id/ll_add_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:onClick="@{onClick}">
+
+                <View
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:background="@drawable/add_bonus"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加下一层阶梯"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

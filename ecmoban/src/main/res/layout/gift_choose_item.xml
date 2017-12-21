@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_gift_item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selecter_newitem_press"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_gift_check"
+                                android:layout_width="@dimen/dim110"
+                                android:layout_height="@dimen/dim220"
+                                android:src="@drawable/goods_cb_unchecked"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/dim35"
+                                />
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center" >
+
+                                        <ImageView
+                                            android:id="@+id/iv_gift"
+                                            android:layout_width="@dimen/dim180"
+                                            android:layout_height="@dimen/dim180"
+                                            android:layout_marginTop="@dimen/dim20"
+                                            android:layout_marginBottom="@dimen/dim20"
+                                            android:layout_marginRight="@dimen/dim20"
+                                            android:background="@drawable/default_image" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="@dimen/dim20"
+                                        android:layout_marginBottom="@dimen/dim20"
+                                        android:layout_marginRight="@dimen/dim20"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:orientation="vertical" >
+                                        <TextView
+                                            android:id="@+id/tv_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1.5"
+                                            android:gravity="left|center_vertical"
+                                            android:singleLine="true"
+                                            android:ellipsize="end"
+                                            android:textSize="@dimen/txt30"
+                                            android:textColor="@color/text_login_color"
+                                            />
+                                        <TextView
+                                            android:id="@+id/tv_origin_price"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="left|bottom"
+                                            android:singleLine="true"
+                                            android:ellipsize="end"
+                                            android:textSize="@dimen/txt28"
+                                            android:textColor="@color/text_color_share"
+                                            />
+                                        <RelativeLayout
+                                            android:layout_marginTop="@dimen/dim10"
+                                            android:layout_width="@dimen/dim320"
+                                            android:layout_height="@dimen/dim60">
+                                        <EditText
+                                            android:id="@+id/et_gift_price"
+                                            android:layout_width="@dimen/dim320"
+                                            android:layout_height="@dimen/dim60"
+                                            android:maxLength="15"
+                                            android:inputType="numberDecimal"
+                                            android:digits="1234567890."
+                                            android:imeOptions="actionNext"
+                                            android:padding="@dimen/dim10"
+                                            android:gravity="center_vertical"
+                                            android:hint="@string/setting_gift_price"
+                                            android:textColor="@color/text_login_color"
+                                            android:textColorHint="@color/text_login_hint_color"
+                                            android:background="@drawable/shape_price_edit"
+                                            android:textSize="@dimen/txt28" />
+
+                                            <ImageView
+                                                android:id="@+id/iv_clear_et"
+                                                android:visibility="gone"
+                                                android:layout_width="@dimen/dim70"
+                                                android:layout_height="@dimen/dim70"
+                                                android:padding="@dimen/dim15"
+                                                android:layout_alignParentRight="true"
+                                                android:layout_centerVertical="true"
+                                                android:src="@drawable/address_del"
+                                                />
+
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                    </LinearLayout>
+            <View
+                android:layout_marginLeft="@dimen/dim110"
+                android:id="@+id/bottom_short_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark" />
+            <View
+                android:id="@+id/bottom_long_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim180"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/shop_logo"
+            android:layout_width="@dimen/dim180"
+            android:layout_height="@dimen/dim180"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/head"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_logo"
+        android:layout_marginTop="@dimen/dim15"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt40"/>
+
+
+</RelativeLayout>

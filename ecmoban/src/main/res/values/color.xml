@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- title-->
+    <color name="layout_bg_f8">#f8f8f8</color>
+    <!-- 通用背景色-->
+    <color name="public_normal_bg_color">#EBEBEB</color>
+    <color name="filter_text_color">#999999</color>
+    <color name="spec_text_color">#999999</color>
+    <color name="spec_select_text_color">#3f80cb</color>
+
+    <drawable name="color_a">#00000000</drawable>
+
+    <color name="view_color">#FFcccccc</color>
+    <color name="background_color">#ffd1dce9</color>
+    <color name="background_color_white">#ffffff</color>
+
+
+    <color name="text_color">#ff666666</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="TextColorGray">#ffc4c4c4</color>
+    <color name="TextColorHint">#30999999</color>
+
+
+    <color name="BgColor">#ffd1dce9</color>
+    <color name="new_textColor">#FF666666</color>
+    <color name="newitem_press">#e7e7e7</color>
+    <color name="newitem_normal">#FFFFFF</color>
+    <color name="collect_normal">#FFFFFFFF</color>
+    <color name="collect_ischecked">#66666666</color>
+    <color name="useless">#E2BBBBBB</color>
+    <color name="trade_head_selectbg">#3f80cb</color>
+
+    <color name="my_red">#3f80cb</color>
+    <color name="my_black">#111111</color>
+    <color name="my_dark">#444444</color>
+    <color name="line_long_dark">#dddddd</color>
+    <color name="line_short_dark">#eeeeee</color>
+    <dimen name="myimgsize">280dp</dimen>
+    <color name="actionsheet_blue">#037BFF</color>
+
+<!--二维码扫描-->
+    <color name="public_theme_color_normal">#3f80cb</color>
+    <color name="public_theme_color_press">#1167ca</color>
+
+    <!--Mydialog的字体颜色-->
+    <color name="btn_text_normal">#3f80cb</color>
+    <color name="btn_press">#1167ca</color>
+
+    <!--share的字体颜色-->
+    <color name="text_color_share">#ff555555</color>
+    <color name="text_share_cancle">#ff555555</color>
+
+    <color name="color_b">#ffeff0f4</color>
+    <color name="share_bg">#E6ffffff</color>
+
+    <!--主题蓝色-->
+    <color name="bg_theme_color">#3f80cb</color>
+
+    <!--其他-->
+    <color name="text_login_color">#ff333333</color>
+    <color name="text_login_hint_color">#ff999999</color>
+    <color name="btn_login_color_normal">#3f80cb</color>
+    <color name="btn_login_color_press">#1167ca</color>
+    <color name="actionsheet_gray">#ffcccccc</color>
+    <!--首页-->
+    <color name="top_line_color">#37d1dce9</color>
+    <!--统计图表色值-->
+    <color name="fillcolor">#daebf5</color>
+    <color name="linecolor">#3f80cb</color>
+    <!--统计图页面-->
+    <color name="selected_color1">#3f80cb</color>
+    <color name="selected_color2">#33cccc</color>
+    <color name="selected_color3">#3395ff</color>
+    <color name="selected_chart_color">#dcdcdc</color>
+    <color name="unselected_chart_color">#f0f0f0</color>
+
+    <color name="pop_bg_alpha">#aa333333</color>
+
+    <color name="_333333">#333333</color>
+    <color name="_f98a07">#f98a07</color>
+    <color name="_f6f6f6">#f6f6f6</color>
+</resources>

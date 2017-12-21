@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_view"/>
+
+    <ImageView
+        android:layout_width="@dimen/dim320"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim50"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/gestrue_f_tra"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim45"
+        android:layout_marginRight="@dimen/dim45"
+        android:text="@string/text_fset_lock"
+        android:textColor="@color/text_login_color"
+        android:gravity="center"
+        android:textSize="@dimen/txt32" />
+
+    <Button
+        android:id="@+id/btn_set_lock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim90"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dim40"
+        android:layout_marginBottom="@dimen/dim60"
+        android:layout_marginLeft="@dimen/dim40"
+        android:layout_marginRight="@dimen/dim40"
+        android:minWidth="@dimen/dim400"
+        android:text="@string/fset_lock"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt35"
+        android:background="@drawable/selector_fset_lock_button"
+        />
+
+</LinearLayout>

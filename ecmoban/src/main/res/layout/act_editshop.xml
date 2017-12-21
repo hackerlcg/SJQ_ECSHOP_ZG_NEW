@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim30"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_input_area"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim110">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim25"
+                android:src="@drawable/login_name"
+                />
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim90"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim90"
+                android:background="#ffffff"
+                android:hint="@string/login_username"
+                android:textColorHint="@color/text_login_hint_color"
+                android:paddingLeft="@dimen/dim20"
+                android:paddingRight="@dimen/dim20"
+                android:singleLine="true"
+                android:textColor="@color/text_login_color"
+                android:textSize="@dimen/txt30" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim85"
+            android:background="@color/line_long_dark" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim110">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim25"
+                android:src="@drawable/login_pwd"
+                />
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim90"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim90"
+                android:background="#ffffff"
+                android:hint="@string/login_password"
+                android:textColorHint="@color/text_login_hint_color"
+                android:paddingLeft="@dimen/dim20"
+                android:paddingRight="@dimen/dim20"
+                android:password="true"
+                android:singleLine="true"
+                android:textColor="@color/text_login_color"
+                android:textSize="@dimen/txt30" />
+
+            <CheckBox
+                android:id="@+id/login_show_pwd"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/dim30"
+                android:button="@drawable/selecter_login_checkboxbg" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim85"
+            android:background="@color/line_long_dark" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim110">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim25"
+                android:src="@drawable/login_api"
+                />
+
+            <EditText
+                android:id="@+id/login_api"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dim90"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dim90"
+                android:background="#ffffff"
+                android:hint="@string/login_api"
+                android:textColorHint="@color/text_login_hint_color"
+                android:paddingLeft="@dimen/dim20"
+                android:paddingRight="@dimen/dim20"
+                android:singleLine="true"
+                android:textColor="@color/text_login_color"
+                android:textSize="@dimen/txt30" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/new_good_distance"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/login_getpassword"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/text_login_color"
+            android:text="@string/login_forget_pwd" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim30"
+         />
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim90"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dim30"
+        android:layout_marginRight="@dimen/dim30"
+        android:minWidth="@dimen/dim400"
+        android:text="@string/finish"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/txt40"
+        android:background="@drawable/selector_login_button"
+        />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_grida_image"
+            android:layout_width="@dimen/px130"
+            android:layout_height="@dimen/px130"
+            android:layout_margin="@dimen/px20"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/item_del"
+            android:layout_width="@dimen/px40"
+            android:layout_height="@dimen/px40"
+            android:adjustViewBounds="true"
+            android:src="@drawable/address_del"/>
+    </RelativeLayout>
+</LinearLayout>

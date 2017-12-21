@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="data"
+            type="com.ecjia.entity.Assets"/>
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include android:id="@+id/ic_head"
+                 layout="@layout/top_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_b">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_my_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/spec_select_text_color"
+                            android:textSize="22sp"
+                            android:text="@{data.sellerMoney}"
+                            tools:text="120.00"
+                            android:textStyle="normal|bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_my_price"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="16dp"
+                            android:text="可提现金额+提现中金额"
+                            android:textColor="@color/TextColorGray"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        style="@style/DivItem">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="可提现金额"/>
+                        <TextView
+                            android:id="@+id/tv_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/spec_select_text_color"
+                            android:text="@{data.canWithdrawMoney}"
+                            tools:text="12.88"/>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dim1"
+                        android:layout_marginLeft="@dimen/dim40"
+                        android:background="@color/line_long_dark"/>
+
+                    <RelativeLayout
+                        style="@style/DivItem"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="提现中金额"/>
+                        <TextView
+                            android:id="@+id/tv_cashing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/spec_select_text_color"
+                            android:text="@{data.withdrawingMoney}"
+                            tools:text="12.88"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_cash_list"
+                        style="@style/DivItem"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:onClick="@{onClick}">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="交易记录"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/header_right_arrow"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/rl_my_bank_card"
+                        style="@style/DivItem"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/selecter_newitem_press"
+                        android:onClick="@{onClick}">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="我的银行卡"/>
+                        <ImageView
+                            android:id="@+id/iv_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/header_right_arrow"/>
+                        <TextView
+                            android:id="@+id/tv_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@id/iv_left"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/TextColorGray"
+                            android:text="@{data.showBindTypeStr()}"
+                            tools:text="未绑定"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/tv_cash_btn"
+                style="@style/CashBottomBtn"
+                android:text="提现"
+                android:onClick="@{onClick}"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

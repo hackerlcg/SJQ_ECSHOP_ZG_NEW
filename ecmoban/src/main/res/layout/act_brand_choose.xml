@@ -1,0 +1,215 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/brands_search_topview"
+            layout="@layout/top_view"/>
+
+        <FrameLayout
+            android:id="@+id/fragment_brands_searchlayout"
+            android:gravity="center"
+            android:background="@color/view_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim96"
+            android:paddingLeft="@dimen/dim20"
+            android:paddingRight="@dimen/dim20">
+
+            <TextView
+                android:gravity="center_vertical|right"
+                android:id="@+id/tv_search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/dialog_cancel"
+                android:textColor="@color/my_dark"
+                android:textSize="@dimen/txt30"/>
+
+            <View
+                android:layout_gravity="center"
+                android:id="@+id/fragment_brands_searchlayout_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/shape_searchview_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim66"/>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/fragment_brands_searchlayout_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:background="@drawable/main_search_icon_gray"
+                    android:layout_width="@dimen/dim40"
+                    android:layout_height="@dimen/dim40"/>
+
+                <TextView
+                    android:id="@+id/tv_brands_search"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/txt26"
+                    android:hint="@string/search_input_brands"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/text_login_color"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/dim250"
+                        android:layout_height="@dimen/dim250"
+                        android:src="@drawable/brand_null"
+                        android:scaleType="fitXY"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brands_null"
+                        android:textColor="@color/text_login_hint_color"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/dim110"
+                        android:textSize="@dimen/txt30" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_notnull"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.ecjia.component.view.XListView
+                    android:id="@+id/xlv_brand_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dim50"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    android:overScrollMode="never"
+                    android:headerDividersEnabled="false"
+                    android:footerDividersEnabled="false"
+                    android:dividerHeight="0dp" />
+
+                <com.ecjia.component.view.MyLetterListView
+                    android:id="@+id/mlv_brands"
+                    android:layout_width="@dimen/dim50"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim110"/>
+    </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="@dimen/dim110">
+
+        <ImageView
+            android:id="@+id/iv_brands_check"
+            android:layout_width="@dimen/dim110"
+            android:layout_height="@dimen/dim110"
+            android:src="@drawable/goods_cb_unchecked"
+            android:padding="@dimen/dim35"
+
+            />
+        <TextView
+            android:id="@+id/tv_choose_num"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="已选0个品牌"
+            android:textSize="@dimen/txt30" />
+        <Button
+            android:id="@+id/btn_add_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim70"
+            android:paddingLeft="@dimen/dim30"
+            android:paddingRight="@dimen/dim30"
+            android:layout_marginRight="@dimen/dim20"
+            android:layout_alignParentBottom="true"
+            android:text="@string/add_choice_brands"
+            android:enabled="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt30"
+            android:background="@drawable/selector_login_button"
+            />
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/first_line"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:background="@color/line_long_dark" />
+    </FrameLayout>
+
+</FrameLayout>

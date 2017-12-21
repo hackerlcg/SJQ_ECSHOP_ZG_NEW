@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim220"
+            android:background="@drawable/selecter_newitem_press"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_goods_del"
+                    android:layout_width="@dimen/dim110"
+                    android:layout_height="@dimen/dim220"
+                    android:src="@drawable/select_del"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dim35"
+                    />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dim20"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center" >
+
+                            <ImageView
+                                android:id="@+id/iv_goods"
+                                android:layout_width="@dimen/dim180"
+                                android:layout_height="@dimen/dim180"
+                                android:layout_margin="@dimen/dim20"
+                                android:background="@drawable/default_image" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dim20"
+                            android:layout_marginBottom="@dimen/dim20"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/txt30"
+                                android:textColor="@color/text_login_color"
+                                />
+                            <TextView
+                                android:id="@+id/tv_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/txt30"
+                                android:textColor="@color/text_login_color"
+                                />
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="left|bottom"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:id="@+id/first"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
+                                    android:text="@string/click_times"
+                                    android:textSize="@dimen/txt25"
+                                    android:textColor="@color/text_login_hint_color"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_click"
+                                    android:layout_toRightOf="@+id/first"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
+                                    android:textSize="@dimen/txt25"
+                                    android:textColor="@color/text_login_hint_color"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:ellipsize="end"
+                                    android:layout_alignParentRight="true"
+                                    android:textSize="@dimen/txt25"
+                                    android:textColor="@color/text_login_hint_color"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_promote"
+                        android:layout_width="@dimen/dim60"
+                        android:layout_height="@dimen/dim60"
+                        android:layout_marginTop="@dimen/dim10"
+                        android:layout_marginLeft="@dimen/dim10"
+                        android:src="@drawable/promote_list"
+                        />
+                </FrameLayout>
+            </LinearLayout>
+   </LinearLayout>
+            <View
+                android:layout_marginLeft="@dimen/dim110"
+                android:id="@+id/bottom_short_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark" />
+            <View
+                android:id="@+id/bottom_long_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim1"
+                android:background="@color/line_long_dark"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim220"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_goods_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/my_red"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="#FFAACC"
+                    android:gravity="center"
+                    android:text="@string/delete_text"
+                    android:textSize="@dimen/txt35"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

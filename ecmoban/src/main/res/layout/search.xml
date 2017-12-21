@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_b"
+              android:orientation="vertical"
+              android:id="@+id/ll_search">
+
+    <include layout="@layout/search_topview"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/dim110">
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim40"
+            android:textSize="@dimen/txt30"
+            android:textColor="@color/text_login_color"
+            android:text="@string/search_history" />
+        <TextView
+            android:id="@+id/tv_search_history"
+            android:layout_toRightOf="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/txt30"
+            android:textColor="@color/text_login_color"
+            android:text="@string/search_history_origin" />
+
+        <ImageView
+            android:id="@+id/clear_history"
+            android:layout_width="@dimen/dim45"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dim40"
+            android:src="@drawable/search_del"
+            />
+
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <FrameLayout
+        android:id="@+id/fl_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="@dimen/dim250"
+                    android:layout_height="@dimen/dim250"
+                    android:src="@drawable/search_null"
+                    android:scaleType="fitXY"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_null"
+                    android:textColor="@color/text_login_hint_color"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/dim110"
+                    android:textSize="@dimen/txt30" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_history"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:headerDividersEnabled="false"
+            >
+        </ListView>
+
+    </LinearLayout>
+</LinearLayout>

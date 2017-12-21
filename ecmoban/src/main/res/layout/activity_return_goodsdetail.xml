@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:layout_marginTop="@dimen/layout_marginLR"
+        android:gravity="center_vertical"
+        android:text="订单编号："
+        android:textColor="@color/text_login_color"
+        android:textSize="@dimen/texte_size_14"/>
+
+    <TextView
+        android:id="@+id/tv_apply_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px50"
+        android:layout_marginBottom="@dimen/layout_marginLR"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:gravity="center_vertical"
+        android:text="申请时间："
+        android:textColor="@color/text_login_color"
+        android:textSize="@dimen/texte_size_14"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/px1"
+          android:background="@color/line_long_dark"/>
+
+    <com.ecjia.hamster.widgets.MyPullRefreshFrameLayout
+        android:id="@+id/my_pullrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+            <include
+                android:id="@+id/null_pager"
+                layout="@layout/null_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </com.ecjia.hamster.widgets.MyPullRefreshFrameLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="@dimen/px1"
+          android:background="@color/text_login_color"/>
+
+    <LinearLayout
+        android:id="@+id/ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@color/text_login_color"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px1"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="确认收到商品"
+            android:textColor="@color/my_red"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <TextView
+            android:id="@+id/tv_writeinfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="填写物流信息"
+            android:textColor="@color/my_red"
+            android:textSize="@dimen/texte_size_16"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

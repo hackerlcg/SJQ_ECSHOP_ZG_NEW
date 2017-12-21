@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/top_view"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim30"
+        />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dim80"
+        android:paddingTop="@dimen/dim20"
+        android:paddingBottom="@dimen/dim20"
+        android:background="@color/white"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim40"
+            android:layout_marginRight="@dimen/dim40"
+            android:paddingLeft="@dimen/dim10"
+            android:paddingRight="@dimen/dim10"
+            android:paddingTop="@dimen/dim10"
+            android:hint="@string/state_default"
+            android:textColor="@color/text_login_color"
+            android:lineSpacingExtra="@dimen/dim10"
+            android:textColorHint="@color/text_login_hint_color"
+            android:background="@null"
+            android:textSize="@dimen/txt30" />
+        <ImageView
+            android:id="@+id/iv_del_content"
+            android:layout_width="@dimen/dim80"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/dim25"
+            android:paddingRight="@dimen/dim25"
+            android:visibility="gone"
+            android:src="@drawable/address_del" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+</LinearLayout>

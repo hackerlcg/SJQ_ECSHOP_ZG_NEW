@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_sort1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/txt30"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/sort1"
+            android:textColor="@color/bg_theme_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim40"
+            android:background="@color/line_long_dark" />
+        <TextView
+            android:id="@+id/tv_sort2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/txt30"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/sort2"
+            android:textColor="@color/text_login_hint_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim40"
+            android:background="@color/line_long_dark" />
+        <TextView
+            android:id="@+id/tv_sort3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/txt30"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/sort3"
+            android:textColor="@color/text_login_hint_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim40"
+            android:background="@color/line_long_dark" />
+        <TextView
+            android:id="@+id/tv_sort4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/txt30"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/sort4"
+            android:textColor="@color/text_login_hint_color"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:background="@color/line_long_dark" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

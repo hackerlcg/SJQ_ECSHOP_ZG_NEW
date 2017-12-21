@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="@dimen/px190"
+            android:layout_height="wrap_content"
+            android:text="物流公司"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px60"
+            android:layout_weight="1"
+            android:background="@drawable/bg_spinne"
+            android:textSize="@dimen/texte_size_14"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/line_long_dark"/>
+
+    <LinearLayout
+        android:id="@+id/ly_return_money"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/px190"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="快递单号"
+            android:textColor="@color/text_login_color"
+            android:textSize="@dimen/texte_size_16"/>
+
+        <EditText
+            android:id="@+id/edit_money"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px60"
+            android:background="@color/white"
+            android:textSize="@dimen/texte_size_16"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px1"
+        android:background="@color/line_long_dark"/>
+    <TextView
+        android:layout_width="@dimen/px190"
+        android:layout_height="@dimen/px100"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR"
+        android:gravity="center_vertical"
+        android:text="物流单面"
+        android:textColor="@color/text_login_color"
+        android:textSize="@dimen/texte_size_16"/>
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/layout_marginLR"
+        android:layout_marginRight="@dimen/layout_marginLR">
+
+        <ImageView
+            android:id="@+id/iv_upload1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/upload_pic"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:id="@+id/iv_del_pic1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/del_pic"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px20"
+        android:layout_marginTop="@dimen/layout_marginLR"
+        android:background="@color/layout_bg_f8"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px100"
+        android:background="@drawable/selector_login_button"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/texte_size_18"
+        android:textStyle="bold"/>
+
+</LinearLayout>

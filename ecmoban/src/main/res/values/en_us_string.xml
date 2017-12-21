@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--通用-->
+    <string name="app_name">摩街掌柜</string>
+    <string name="ecmoban">摩街掌柜</string>
+    <string name="about">关于</string>
+    <string name="login_login">登录</string>
+    <string name="login_username">店铺名称</string>
+    <string name="login_password">密码</string>
+    <string name="login_api">店铺地址(API)</string>
+    <string name="shop">店铺</string>
+    <string name="main_mycenter">我的</string>
+    <string name="main_home">主页</string>
+    <string name="delete">移入回收站</string>
+    <string name="delete3">删除</string>
+    <string name="delete2">移入\n回收站</string>
+    <string name="save">保存</string>
+    <string name="no">无</string>
+    <string name="delete_success">移入回收站成功</string>
+    <string name="edit">编辑</string>
+    <string name="fgcheck">已验证</string>
+    <string name="fgnocheck">验证</string>
+    <string name="fgcheck_fail">验证失败</string>
+    <string name="next">下一步</string>
+    <string name="done">完成</string>
+    <string name="editsuccess">编辑成功</string>
+    <string name="check_the_network">请检查网络</string>
+    <string name="browser">浏览器</string>
+    <string name="main_order">订单</string>
+
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">释放刷新</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_last_time">最后更新时间：</string>
+    <string name="xlistview_header_new_normal">让管理更方便</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="hold_on">请稍候…</string>
+    <string name="session_invalid">错误信息</string>
+    <string name="push_title">消息中心</string>
+
+    <!--EcmobanMainActivity-->
+    <string name="main_level">等级：</string>
+    <string name="main_no_network">无网络连接！</string>
+    <string name="main_start_load">开始下载</string>
+    <string name="main_exit">退出</string>
+    <string name="main_exit_content">确定退出？</string>
+
+    <!--ShareActivity-->
+    <string name="share_no_accredit">没有授权</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_succeed">分享成功</string>
+    <string name="move_to_recycle">移入回收站</string>
+
+    <!--Model-->
+    <string name="loading">加载中...</string>
+    <string name="error_network">网络异常，请稍后再试</string>
+    <string name="error_1">处理失败</string>
+    <string name="error_100">处理失败</string>
+    <string name="error_101">提交参数错误</string>
+    <string name="error_13">不存在的信息</string>
+
+    <!--activity_share-->
+    <string name="share_tosina">新浪微博</string>
+    <string name="share_totencent">腾讯微博</string>
+    <string name="share_toqq">QQ好友</string>
+    <string name="share_towechat">微信好友</string>
+    <string name="share_toWXfriend">朋友圈</string>
+    <string name="share_tomessage">短信</string>
+    <string name="share_toEnail">电子邮件</string>
+    <string name="share_cancel">取消</string>
+    <string name="share_title">好东西就要分享出去！</string>
+    <string name="share_pic_null">图片为空无法分享！</string>
+    <string name="detail_sale">出售的“</string>
+    <string name="detail_good">”很不错!</string>
+    <!--login-->
+    <string name="login_user_not_exist">用户名不存在</string>
+    <string name="login_invalid_password">密码错误</string>
+    <string name="login_invalid">您输入的帐号信息不正确</string>
+    <string name="login_welcome">欢迎使用</string>
+    <string name="login_remember_me">记住我</string>
+    <string name="login_forget_pwd">忘记密码？</string>
+    <string name="login">登 录</string>
+    <string name="add">添 加</string>
+    <string name="finish">完 成</string>
+    <string name="login2">进入店铺</string>
+    <string name="keeper">掌柜</string>
+    <string name="username_cannot_be_empty">用户名不能为空</string>
+    <string name="password_cannot_be_empty">密码不能为空</string>
+    <string name="api_cannot_be_empty">店铺API不能为空</string>
+    <string name="api_cannot_be_same">已有相同API的店铺</string>
+    <string name="add_success">添加成功</string>
+
+    <!--search-->
+    <string name="search_input">请输入搜索关键词或订单号</string>
+    <string name="search_input_orders">搜索订单号</string>
+    <string name="search_input_goods">搜索商品</string>
+    <string name="search_input_brands">搜索品牌</string>
+    <string name="search_input_category">搜索分类</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_history_origin">（0条）</string>
+
+    <!--top_view-->
+    <string name="top_clean">清空</string>
+    <!--activit_account-->
+    <string name="use_account">可用余额：</string>
+    <string name="account_rechange">充 值</string>
+    <string name="account_user">帐户余额</string>
+    <!--setting-->
+    <string name="versionno">版本号</string>
+    <string name="versiondate">发布日期</string>
+    <string name="versionupdata">检测新版本</string>
+    <string name="exit_login">退出登录</string>
+    <!--SearchActivity以及相关-->
+    <string name="search_please_input">请输入关键字</string>
+    <string name="search_search">搜索</string>
+    <string name="running">进行中...</string>
+    <string name="search_null">暂无任何搜索记录</string>
+
+    <string name="is_default_address">已经是默认地址！</string>
+    <string name="is_default">默认</string>
+    <string name="getpassword">找回密码</string>
+
+    <!--home_fragment-->
+    <string name="today_income">今日收益(元)</string>
+    <string name="today_order">今日订单</string>
+    <string name="today_custom">今日访客</string>
+    <string name="yest_income">昨日收益(元)</string>
+    <string name="yest_order">昨日订单</string>
+    <string name="yest_custom">昨日访客</string>
+    <string name="my_goods">我的宝贝</string>
+    <string name="my_orders">我的订单</string>
+    <string name="my_stats">数据统计</string>
+    <string name="my_message">消息中心</string>
+
+    <!--shop-->
+    <string name="setting">设置</string>
+    <string name="shop_zxing">店铺二维码</string>
+    <string name="shop_title">我的店铺</string>
+    <string name="shop_null">您还没添加过店铺呢</string>
+    <string name="shop_top_right">切换店铺</string>
+    <string name="shop_list">店铺列表</string>
+    <string name="shop_check">店铺验证</string>
+    <string name="now_in_shop">您正在这家店铺内</string>
+    <string name="shop_category">店铺分类</string>
+    <string name="service_phone">客服电话</string>
+    <string name="shop_area">所在地</string>
+    <string name="shop_address">详细地址</string>
+    <string name="shop_introduction">店铺简介</string>
+    <string name="shop_dialog">是否提交修改？</string>
+    <string name="shopinfo_null">暂无店铺信息</string>
+
+    <!--orders-->
+    <string name="wait_pay">待付款</string>
+    <string name="wait_send">待发货</string>
+    <string name="is_send">已发货</string>
+    <string name="is_finish">已完成</string>
+    <string name="refund">退款</string>
+    <string name="is_close">已关闭</string>
+    <string name="order_time">下单时间:</string>
+    <string name="order_num">共0件</string>
+    <string name="order_id">订单编号：</string>
+    <string name="order_account">订单金额：</string>
+    <string name="order_detail">订单详情</string>
+    <string name="order_cancel">取消订单</string>
+    <string name="cancel_success">订单取消成功</string>
+    <string name="order_state">订单状态：</string>
+    <string name="order_payment">支付方式：</string>
+    <string name="order_state2">订单状态</string>
+    <string name="receive_info">收货信息</string>
+    <string name="order_price">订单金额</string>
+    <string name="price_info">价格信息</string>
+    <string name="order_null">暂无任何订单</string>
+    <string name="consignee">收货人</string>
+    <string name="contract">联系方式</string>
+    <string name="mobile">手机号码</string>
+    <string name="rec_address">收货地址</string>
+    <string name="postscript">备注</string>
+    <string name="good_amount_total">商品总金额</string>
+    <string name="discount">优惠</string>
+    <string name="discount2">返现</string>
+    <string name="shipping_fee">运费</string>
+    <string name="shipping_fee2">运费金额:</string>
+    <string name="total_fee">应付金额</string>
+    <string name="tax">发票</string>
+
+    <!--goods-->
+    <string name="on_sale">在售</string>
+    <string name="to_on_sale">上架</string>
+    <string name="to_on_sale_success">上架成功</string>
+    <string name="off_sale">下架</string>
+    <string name="off_sale_success">下架成功</string>
+    <string name="stock">售罄</string>
+    <string name="sort">排序</string>
+    <string name="click_times">浏览次数：</string>
+    <string name="goods_null">暂无任何商品</string>
+    <string name="sort1">人气从高到低</string>
+    <string name="sort2">人气从低到高</string>
+    <string name="sort3">价格从高到低</string>
+    <string name="sort4">价格从低到高</string>
+    <string name="good_info">宝贝一览</string>
+    <string name="good_detail">图文详情</string>
+    <string name="shop_sale_price">本店售价：</string>
+    <string name="good_price">市场价格：</string>
+    <string name="good_type">商品类型：</string>
+    <string name="last_updatetime">最后更新时间：</string>
+    <string name="no_select">请至少选择一项</string>
+    <string name="countdown">距离活动结束时间：</string>
+    <string name="goods_accountall">商品金额总计：</string>
+
+    <!--shopedit-->
+    <string name="edit_phone">编辑客服电话</string>
+    <string name="edit_address">编辑详细地址</string>
+    <string name="edit_description">编辑店铺简介</string>
+    <string name="edit_shop_dialog">保存空的内容将置空对应数据\n是否保存？</string>
+    <string name="not_edit_shop">未对原有内容进行编辑</string>
+
+    <!--goodsfilter-->
+    <string name="filter_all">全部分类</string>
+
+    <!--shopsfilter-->
+    <string name="filter_shop">店铺分类</string>
+
+    <!--address-->
+    <string name="area">所在地</string>
+    <string name="area_tips">请选择所在地</string>
+
+    <!--setting-->
+    <string name="version_info">版本信息</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="please_logoradd">请先登录</string>
+    <string name="clear_cache_content">共0KB缓存，是否清除？</string>
+
+    <!--gestruelock-->
+    <string name="set_gestruelock">手势密码锁定</string>
+    <string name="setting_gestruelock">手势密码设置</string>
+    <string name="gestruelock">手势密码</string>
+    <string name="gestruelock_clear">您的手势密码已经被清除，是否去设置</string>
+    <string name="gesguide">手势保护</string>
+    <string name="reset_gestruelock">重置手势密码</string>
+    <string name="fset_lock">创建手势密码</string>
+    <string name="draw_lock">绘制解锁图案</string>
+    <string name="forget_lock">忘记手势密码？</string>
+    <string name="set_your_lock">设置您的手势密码</string>
+    <string name="confirm_your_lock">确认您的手势密码</string>
+    <string name="set_lock_success">手势密码设置成功！</string>
+    <string name="set_lock_fail">两次绘制不一致，请重新绘制！</string>
+    <string name="lock_fail">手势密码错误，请重新绘制！</string>
+    <string name="set_lock_tooshort">请至少连接三个点！</string>
+    <string name="text_fset_lock">创建一个能给商城掌柜解锁图案，这样他人在借用你的手机时，将无法打开掌柜。</string>
+    <string name="text_set_lock">开启时，每次进入掌柜需手势解锁</string>
+    <string name="text_set_destroy">开启后，当手势密码连续绘制错误达5次时，将会开启程序自我保护模式（清除本地缓存数据，不影响服务端）</string>
+    <string name="state_default">未设置</string>
+    <string name="state_on">已开启</string>
+    <string name="set_to_on">开启密码锁定</string>
+    <string name="state_off">已关闭</string>
+    <string name="set_to_off">关闭密码锁定</string>
+
+    <!--dialog-->
+    <string name="dialog_title">标题</string>
+    <string name="dialog_message">内容</string>
+    <string name="dialog_ensure">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="shopedit">店铺编辑</string>
+
+    <string name="enter_password">请输入店铺密码</string>
+    <string name="shop_password">店铺密码</string>
+    <string name="tips">店铺密码</string>
+    <string name="tips_content">所有未验证店铺的数据都会被清除\n您确定吗？</string>
+    <string name="tip">提示</string>
+    <string name="tips_content_del">确认移入回收站吗？</string>
+    <string name="tips_content_del2">确认删除吗？</string>
+    <string name="tips_content_clear">确认清除历史记录吗？</string>
+    <string name="tips_content_on_sale">确认上架吗？</string>
+    <string name="tips_content_cancel">确认取消订单吗？</string>
+    <string name="tips_content_off_sale">确认下架吗？</string>
+    <string name="tips_content_back">添加内容还未保存,是否继续返回？</string>
+
+    <!--action_log-->
+    <string name="action_log">操作记录</string>
+    <string name="action_person">操作者</string>
+    <string name="action_time">操作时间</string>
+    <string name="action_null">暂无操作记录</string>
+    <string name="action_postscript">备注:</string>
+
+    <!--sub_order-->
+    <string name="sub_order">分单</string>
+    <string name="child_order">子订单</string>
+
+    <!--PushActivity-->
+    <string name="message_center">客服中心</string>
+    <string name="orders_msg">订单通知</string>
+    <string name="goods_msg">宝贝通知</string>
+    <string name="watch_now">立即查看</string>
+    <string name="message_null">暂无任何消息</string>
+
+    <!--PriceEdit-->
+    <string name="price_edit_title">价格修改</string>
+    <string name="edit_price">修改价格</string>
+    <string name="shop_price">本店售价</string>
+    <string name="market_price">市场售价</string>
+    <string name="vip_price">会员价格</string>
+    <string name="vip_price_tips">会员价格为-1时表示会员价格按照会员等级折扣率计算，你也可以为每个等级指定一个固定价格。</string>
+    <string name="shop_price_btn">按市场价格计算</string>
+    <string name="format_price">取整数</string>
+    <string name="promote_info_switch">促销信息</string>
+    <string name="bonus_price">优惠价格</string>
+    <string name="bonus_num">优惠数量</string>
+    <string name="add_bonus_price">添加优惠价格</string>
+    <string name="about_point">积分相关</string>
+    <string name="consignment_person">代销用户</string>
+    <string name="gold_person">金牌</string>
+    <string name="sliver_person">银牌</string>
+    <string name="copper_person">铜牌</string>
+    <string name="promote_price">促销价</string>
+    <string name="promote_start_time">开始时间</string>
+    <string name="promote_end_time">结束时间</string>
+    <string name="consume_points">赠送消费积分</string>
+    <string name="level_points">赠送等级积分</string>
+    <string name="use_points_limit">积分购买金额</string>
+    <string name="points_tips1">购买该商品时赠送消费积分数，-1表示按商品价格赠送。</string>
+    <string name="points_tips2">购买该商品时赠送等级积分数，-1表示按商品价格赠送。</string>
+    <string name="points_tips3">（此处需填写金额）购买该商品时最多可以使用的金额。</string>
+
+    <string name="wrong_sdate">开始日期不能晚于结束日期</string>
+    <string name="wrong_edate">结束日期不能早于开始日期</string>
+    <string name="same_date">开始日期和结束日期至少间隔一天</string>
+    <string name="wrong_promote">促销信息开启状态下，内容需填写完整\n（*点击【确定】继续提交\n将自动关闭促销信息）</string>
+    <string name="wrong_promote2">促销价格不能为0</string>
+    <string name="wrong_null">检查到有未填项，是否继续提交？\n（*点击【确定】继续提交\n未填写项目将默认设为0，包括售价）</string>
+    <string name="wrong_volume_num">存在重复的优惠数量，请检查</string>
+    <string name="edit_price_failed">修改价格失败</string>
+    <string name="edit_shop_failed">修改失败</string>
+
+    <string name="set_now">去设置</string>
+
+    <!--stats-->
+    <string name="stats_sales">销售金额</string>
+    <string name="stats_orders">订单数量</string>
+    <string name="stats_visitor">访客数量</string>
+    <string name="sales_detail">收益明细</string>
+    <string name="null_sales_detail">暂无任何收益</string>
+    <string name="order_manage">订单管理</string>
+    <string name="visitor_analysis">访客分析</string>
+    <string name="days7">7天</string>
+    <string name="days30">30天</string>
+    <string name="days90">90天</string>
+    <string name="today">今日</string>
+    <string name="total_sales">总收入</string>
+    <string name="today_max">单日最高</string>
+    <string name="average_sales">日均</string>
+    <string name="payed_order">付款订单</string>
+    <string name="wait_ship_order">待发货订单</string>
+    <string name="shiped_order">已发货订单</string>
+    <string name="total_visitors">访客人数</string>
+    <string name="visit_times">浏览次数</string>
+    <string name="week">本周</string>
+    <string name="no_data">暂无任何访客</string>
+    <!--visitor-->
+    <string name="this_month">本月</string>
+
+    <!--act_qrbind-->
+    <string name="qrbind_title">扫码登录</string>
+    <string name="qrbind_confirm_title">EC+收银台登录确认,是否授权登录？</string>
+    <string name="qrbind_confirm">确认登录</string>
+    <string name="qrbind_rescan">重新扫描</string>
+    <string name="qrbind_cancel">取消登录</string>
+    <string name="qrvalidate_succeed">二维码验证成功！</string>
+    <string name="qrvalidate_failed">二维码验证失败！</string>
+    <string name="qrbind_succeed">授权登录成功！</string>
+    <string name="qrunbind_succeed">取消授权成功！</string>
+    <string name="qrunbind_failed">取消授权失败！</string>
+    <string name="qrbind_failed">授权登录失败！</string>
+    <!--1.4-->
+    <string name="service">客服</string>
+    <string name="servicefragment_title">客服</string>
+    <string name="good_feedback">商品咨询</string>
+    <string name="order_feedback">订单咨询</string>
+    <string name="user_feedback">会员咨询</string>
+    <string name="yesterday">昨天</string>
+    <!--咨询-->
+    <string name="consult">咨询</string>
+    <string name="consult_goods">商品咨询</string>
+    <string name="consult_order">订单咨询</string>
+    <string name="consult_sendlink">发送链接</string>
+    <string name="consult_sendmsg">发送</string>
+    <string name="consult_hint">请输入文字</string>
+    <string name="order_number">订单编号：</string>
+    <string name="order_cost">订单金额：</string>
+    <string name="trade_order_time">下单时间：</string>
+    <string name="not_null">内容不能为空！</string>
+    <string name="role">职位：</string>
+    <string name="my_Email">邮箱：</string>
+    <string name="login_time">登录时间</string>
+    <string name="keep_item">已工作时间</string>
+    <string name="user_detail">详细资料</string>
+    <string name="level">等级：</string>
+    <string name="balance">账号余额：</string>
+    <string name="orders_num">订单数量</string>
+    <string name="red_pager_num">红包数量</string>
+    <string name="integral_num">积分数量</string>
+    <string name="user_Email">邮箱</string>
+    <string name="anonymity">匿名用户</string>
+    <string name="is_null">无</string>
+    <string name="delete_text">删除</string>
+    <string name="delete_dialog_content">您确定要删除吗？</string>
+    <!-- 1.6-->
+    <string name="news">客服</string>
+    <string name="magic_discount">满减满送</string>
+    <string name="magic_promotion">促销商品</string>
+    <string name="promotion">促销</string>
+    <string name="magic_cube">促销</string>
+    <string name="discount_add">添加</string>
+    <!--act_discount-->
+    <string name="un_start">未开始</string>
+    <string name="carried_out">进行中</string>
+    <string name="has_end">已结束</string>
+    <string name="discount_null">暂无任何活动</string>
+    <!-- discount_list_item-->
+    <string name="start_time">开始：</string>
+    <string name="end_time">结束：</string>
+    <string name="max_amount">最高额度：</string>
+
+    <!-- act_custom_center-->
+    <string name="custom_center">用户中心</string>
+    <string name="center_name">用户名：</string>
+    <string name="center_mail">邮箱：</string>
+    <string name="center_last_login">上次登录：</string>
+    <string name="center_signout_toast">网络不给力，请再尝试下退出登录</string>
+
+    <!-- act_add_discount-->
+    <string name="add_discount_name">优惠名称</string>
+    <string name="add_discount_name_tips">用活动名称，吸引客户参与</string>
+    <string name="add_discount_start_time">开始时间</string>
+    <string name="add_discount_end_time">结束时间</string>
+    <string name="add_discount_rank_level">会员等级</string>
+    <string name="add_discount_setting">优惠设置</string>
+    <string name="add_discount_option_goods">参与商品</string>
+    <string name="add_discount_text">添加优惠</string>
+    <string name="add_discount_name_hint">用活动特点，吸引客户参与</string>
+    <string name="add_discount_time_hint">点击设置</string>
+    <string name="add_discount_no_setting">未设置</string>
+    <string name="add_discount_all_goods">全部商品</string>
+    <string name="add_discount_part_category">指定分类</string>
+    <string name="add_discount_part_brand">指定品牌</string>
+    <string name="add_discount_part_goods">指定商品</string>
+    <string name="add_rank_toast">请选择至少一个会员等级</string>
+    <string name="add_discount_time_toast">请设置活动开始及结束时间</string>
+    <string name="add_discount_name_toast">请设置活动名称</string>
+    <string name="add_discount_rank_toast">请设置会员等级</string>
+    <string name="add_discount_type_toast">请设置优惠形式</string>
+    <string name="add_discount_range_toast">请设置参与商品范围</string>
+    <string name="add_discount_success">添加活动成功！</string>
+    <string name="edit_discount_success">编辑活动成功！</string>
+    <string name="del_discount_success">删除活动成功！</string>
+    <string name="add_discount_back_tips">您的信息还未保存，返回后将会丢失！</string>
+    <string name="edit_discount_back_tips">是否退出编辑？</string>
+    <string name="edit_discount_del_tips">重新设置时间可以继续这个促销活动哦!</string>
+    <string name="reset_discount_range">重新选择</string>
+
+    <!-- act_discount_setting-->
+    <string name="discount_type">优惠形式</string>
+    <string name="discount_setting_gift">特惠品</string>
+    <string name="discount_setting_cash">现金减免</string>
+    <string name="discount_setting_discount">价格折扣</string>
+    <string name="discount_setting_tips1">设置优惠门槛，消费指定金额可享优惠</string>
+    <string name="discount_setting_tips2">如:打9折,就输入90</string>
+    <string name="discount_setting_tips3">允许买家选择特惠品的最大数，0表示不限制</string>
+    <string name="consume_lower_limit">消费金额下限</string>
+    <string name="consume_upper_limit">消费金额上限</string>
+    <string name="cut_yuan">立减(元)</string>
+    <string name="discount3">折扣</string>
+    <string name="discount_setting_gift_selected">已选特惠商品</string>
+    <string name="gift_num">特惠品限购数量</string>
+    <string name="gift_reset">重新选择</string>
+    <string name="discount_setting_gift_add">参与特惠商品</string>
+    <string name="discount_setting_toast1">请选择特惠类型</string>
+    <string name="discount_setting_toast2">有未填写项，请填写完整</string>
+    <string name="discount_setting_toast3">请设置参与特惠商品</string>
+    <string name="discount_setting_toast4">消费金额下限不能大于等于上限</string>
+
+    <!-- act_gift_choose-->
+    <string name="gift_list">特惠商品</string>
+    <string name="add_choice_gift">添加已选商品</string>
+    <string name="setting_gift_price">设置特惠价格</string>
+
+
+    <!-- act_select_gift-->
+    <string name="select_gift_list">选择特惠商品</string>
+    <string name="save_gift_list">添加已选特惠商品</string>
+    <string name="gift_price">特惠价格:</string>
+
+    <string name="select_brand_list">选择品牌</string>
+    <string name="add_choice_brands">添加品牌</string>
+    <string name="selected_brands">已选品牌</string>
+    <string name="brands_null">暂无任何品牌</string>
+    <string name="save_brands_list">添加已选品牌</string>
+
+    <string name="select_category_list">选择分类</string>
+    <string name="add_choice_category">添加分类</string>
+    <string name="selected_category">已选分类</string>
+    <string name="category_null">暂无任何分类</string>
+    <string name="save_category_list">添加已选分类</string>
+
+    <string name="select_goods_list">选择商品</string>
+    <string name="selected_goods">已选商品</string>
+    <string name="save_goods_list">添加已选商品</string>
+
+
+    <string name="promotion_null">暂无任何促销商品</string>
+    <string name="promotion_price">促销价格:</string>
+
+    <string name="goods_name">商品名称</string>
+    <string name="goods_shop_price">商品价格</string>
+    <string name="add_promotion_goods">添加促销商品</string>
+    <string name="search_promotion_tips">该商品已选择</string>
+    <string name="search_promotion_tips2">该商品已经是促销商品</string>
+    <string name="add_promotion_no_select">请选择</string>
+    <string name="edit_promotion_goods">编辑促销商品</string>
+    <string name="add_promotion_price">活动价格</string>
+    <string name="add_promotion_tips">注:需要先搜索商品，生成商品列表，然后再选择</string>
+    <string name="add_promotion_success">添加促销商品成功！</string>
+    <string name="edit_promotion_success">编辑促销商品成功！</string>
+    <string name="del_promotion_success">删除促销商品成功！</string>
+
+</resources>

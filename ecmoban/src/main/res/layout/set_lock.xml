@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/top_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim45"
+            android:layout_marginRight="@dimen/dim45"
+            android:layout_marginBottom="@dimen/dim40"
+            android:text="@string/set_your_lock"
+            android:textColor="@color/text_login_color"
+            android:gravity="center"
+            android:layout_above="@+id/lock_pattern"
+            android:textSize="@dimen/txt32" />
+
+        <com.ecjia.component.view.LockPatternView
+            android:id="@+id/lock_pattern"
+            android:layout_marginLeft="@dimen/dim45"
+            android:layout_marginRight="@dimen/dim45"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

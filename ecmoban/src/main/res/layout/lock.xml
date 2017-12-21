@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/dim120"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_blue"
+        android:layout_marginTop="@dimen/dim30"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dim45"
+        android:layout_marginRight="@dimen/dim45"
+        android:layout_marginBottom="@dimen/dim20"
+        android:text="@string/draw_lock"
+        android:textColor="@color/text_login_color"
+        android:gravity="center"
+        android:textSize="@dimen/txt32" />
+
+    <com.ecjia.component.view.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_marginLeft="@dimen/dim60"
+        android:layout_marginRight="@dimen/dim60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim45"
+            android:layout_marginRight="@dimen/dim45"
+            android:layout_marginBottom="@dimen/dim40"
+            android:text="@string/forget_lock"
+            android:textColor="@color/text_login_color"
+            android:gravity="center_horizontal|bottom"
+            android:layout_gravity="bottom"
+            android:textSize="@dimen/txt32" />
+    </LinearLayout>
+
+
+</LinearLayout>

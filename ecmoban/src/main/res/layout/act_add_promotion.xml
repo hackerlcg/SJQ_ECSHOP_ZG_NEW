@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_b"
+    android:id="@+id/ll_root_promotion"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        android:id="@+id/promotion_search_topview"
+        layout="@layout/top_view" />
+
+    <FrameLayout
+        android:id="@+id/fragment_promotion_searchlayout"
+        android:gravity="center"
+        android:background="@color/view_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim96"
+        android:paddingLeft="@dimen/dim20"
+        android:paddingRight="@dimen/dim20">
+
+        <TextView
+            android:gravity="center_vertical|right"
+            android:id="@+id/tv_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical|right"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/my_dark"
+            android:textSize="@dimen/txt30"/>
+
+        <View
+            android:layout_gravity="center"
+            android:id="@+id/fragment_promotion_searchlayout_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/shape_searchview_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim66"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/fragment_promotion_searchlayout_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:background="@drawable/main_search_icon_gray"
+                android:layout_width="@dimen/dim40"
+                android:layout_height="@dimen/dim40"/>
+
+            <TextView
+                android:id="@+id/tv_promotion_search"
+                android:gravity="left"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/txt26"
+                android:hint="@string/search_input_goods"
+                android:layout_width="wrap_content"
+                android:textColor="@color/text_login_color"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginTop="@dimen/dim30"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim100"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/goods_name"
+            android:textSize="@dimen/txt32" />
+
+        <TextView
+            android:id="@+id/tv_promotion_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim40"
+            android:layout_marginLeft="@dimen/dim40"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textSize="@dimen/txt28"
+             />
+        <TextView
+            android:id="@+id/tv_promotion_name_hint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim40"
+            android:layout_marginLeft="@dimen/dim40"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@color/white"
+            android:hint="@string/add_promotion_no_select"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/txt28"
+             />
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/ll_promote_shop_price"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:visibility="gone"
+         android:orientation="vertical"
+         >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim40"
+            android:background="@color/line_long_dark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim100"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dim40"
+            android:text="@string/goods_shop_price"
+            android:textSize="@dimen/txt32" />
+
+        <TextView
+            android:id="@+id/tv_promotion_shop_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim40"
+            android:layout_marginLeft="@dimen/dim40"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="#ffffff"
+            android:textColor="@color/my_red"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/txt28"
+             />
+    </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+        <TextView
+            android:id="@+id/add_promotion_tips"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/dim30"
+            android:layout_height="@dimen/dim60"
+            android:gravity="center|right"
+            android:textSize="@dimen/txt24"
+            android:text="@string/add_promotion_tips"
+            android:textColor="@color/text_login_hint_color"/>
+
+    <View
+        android:id="@+id/tips_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim30"
+        android:visibility="gone"
+         />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dim40"
+                android:gravity="center_vertical"
+                android:text="@string/add_discount_start_time"
+                android:textSize="@dimen/txt32" />
+            <TextView
+                android:id="@+id/tv_start_time"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/dim40"
+                android:textSize="@dimen/txt28"
+                android:hint="@string/add_discount_time_hint"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dim1"
+            android:layout_marginLeft="@dimen/dim40"
+            android:background="@color/line_long_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim100"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim100"
+                android:layout_marginLeft="@dimen/dim40"
+                android:gravity="center_vertical"
+                android:text="@string/add_discount_end_time"
+                android:textSize="@dimen/txt32" />
+            <TextView
+                android:id="@+id/tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:layout_marginRight="@dimen/dim40"
+                android:textSize="@dimen/txt28"
+                android:hint="@string/add_discount_time_hint"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim30"
+        android:background="@color/color_b" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:id="@+id/ll_level"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim100"
+        android:background="@drawable/selecter_newitem_press"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dim40"
+            android:gravity="center_vertical"
+            android:text="@string/add_promotion_price"
+            android:textSize="@dimen/txt32" />
+        <EditText
+            android:id="@+id/et_promotion_price"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dim40"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center_vertical|right"
+            android:textSize="@dimen/txt28"
+            android:inputType="numberDecimal"
+            android:hint="@string/add_discount_no_setting"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim1"
+        android:background="@color/line_long_dark" />
+
+    <Button
+        android:id="@+id/btn_promotion_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim80"
+        android:layout_marginLeft="@dimen/dim40"
+        android:layout_marginRight="@dimen/dim40"
+        android:layout_marginTop="@dimen/dim50"
+        android:text="@string/save"
+        android:textSize="@dimen/txt36"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_login_button"/>
+    <Button
+        android:id="@+id/btn_promotion_del"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim80"
+        android:layout_marginLeft="@dimen/dim40"
+        android:layout_marginRight="@dimen/dim40"
+        android:layout_marginTop="@dimen/dim25"
+        android:text="@string/delete3"
+        android:textSize="@dimen/txt36"
+        android:visibility="gone"
+        android:textColor="@color/btn_login_color_normal"
+        android:background="@drawable/selector_cancel_button"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>

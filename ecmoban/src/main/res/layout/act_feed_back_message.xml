@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_b"
+    android:layout_height="match_parent">
+    <include layout="@layout/top_view"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+                <com.ecjia.component.view.XListView
+                    android:listSelector="@android:color/transparent"
+                    android:divider="@null"
+                    android:background="#00ffffff"
+                    android:scrollbars="none"
+                    android:id="@+id/feedback_list"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </com.ecjia.component.view.XListView>
+                <include
+                    android:id="@+id/null_page"
+                    layout="@layout/null_feedback_page"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:enabled="false"
+            android:id="@+id/feedback_close_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <!--</ScrollView>-->
+
+    <LinearLayout
+        android:id="@+id/bottom_view"
+        android:layout_gravity="bottom"
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:background="@drawable/shape_white_stroke_corner_unpress"
+                android:id="@+id/feedback_edit"
+                android:hint="@string/consult_hint"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:imeOptions="actionDone"
+                android:maxLength="200"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="@color/my_dark"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:enabled="false"
+            android:id="@+id/feedback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/consult_sendmsg"
+            android:textSize="15dp"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

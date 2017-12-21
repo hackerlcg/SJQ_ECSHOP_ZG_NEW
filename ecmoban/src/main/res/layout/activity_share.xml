@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_share_bg"
+        android:layout_marginLeft="@dimen/dim15"
+        android:layout_marginRight="@dimen/dim15"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/txt22"
+            android:text="@string/share_title"
+            android:textColor="#555555"
+            android:layout_marginTop="@dimen/dim20"
+            android:layout_marginBottom="@dimen/dim20"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dim30"
+                android:layout_marginBottom="@dimen/dim30">
+
+                <LinearLayout
+                    android:id="@+id/share_weixinitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/wechat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_towechat" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_qqfriend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/qq" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_toqq" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_sinawb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/weibo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_tosina" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/share_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/wcircle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_toWXfriend" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_smsitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/message" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_tomessage" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/share_emailitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dim30"
+                    android:paddingRight="@dimen/dim15"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dim120"
+                        android:layout_height="@dimen/dim120"
+                        android:background="@drawable/email" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dim30"
+                        android:textColor="#555555"
+                        android:text="@string/share_toEnail" />
+                </LinearLayout>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim1"
+            android:visibility="gone"
+            android:background="@color/spec_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dim30"
+            android:layout_marginBottom="@dimen/dim30">
+
+
+            <LinearLayout
+                android:id="@+id/ll_edit_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim30"
+                android:paddingRight="@dimen/dim15"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dim120"
+                    android:layout_height="@dimen/dim120"
+                    android:background="@drawable/edit_price" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim30"
+                    android:textColor="#555555"
+                    android:text="@string/edit_price" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim30"
+                android:paddingRight="@dimen/dim15"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_sale"
+                    android:layout_width="@dimen/dim120"
+                    android:layout_height="@dimen/dim120"
+                    android:background="@drawable/share_off" />
+
+                <TextView
+                    android:id="@+id/tv_sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim30"
+                    android:textColor="#555555"
+                    android:text="@string/off_sale" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dim30"
+                android:paddingRight="@dimen/dim15"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/dim120"
+                    android:layout_height="@dimen/dim120"
+                    android:background="@drawable/share_del" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim30"
+                    android:textColor="#555555"
+                    android:text="@string/move_to_recycle" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/share_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dim15"
+        android:layout_marginLeft="@dimen/dim15"
+        android:layout_marginRight="@dimen/dim15"
+        android:layout_marginBottom="@dimen/dim15"
+        android:background="@drawable/selector_customercenter_exitlogin"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim110"
+            android:gravity="center"
+            android:text="@string/share_cancel"
+            android:textColor="@color/bg_theme_color"
+            android:textSize="@dimen/txt35" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_public_mydialog"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dialog_top"
+            >
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="@string/dialog_title"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/txt30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="65dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dim5"
+                android:layout_margin="@dimen/dim40"
+                android:background="@drawable/shape_check_bg"
+                android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/dialog_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/dim80"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:hint="@string/edit"
+                        android:textColorHint="@color/text_login_hint_color"
+                        android:paddingLeft="@dimen/dim20"
+                        android:paddingRight="@dimen/dim20"
+                        android:singleLine="true"
+                        android:textColor="@color/text_login_color"
+                        android:textSize="@dimen/txt30" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_long_dark" />
+
+        <LinearLayout
+            android:id="@+id/version_sure"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_dialog_buttom"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_version_press"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/version_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dialog_ensure"
+                    android:textColor="#ea0025"
+                    android:textSize="@dimen/txt30" />
+            </LinearLayout>
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/update_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/shape_dialog_buttom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/unneadpay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_press"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dialog_cancel"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:background="@color/line_long_dark" />
+
+            <LinearLayout
+                android:id="@+id/neadpay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/dialog_press_sure"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/dialog_ensure"
+                    android:textColor="@color/text_login_color"
+                    android:textSize="@dimen/txt30" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

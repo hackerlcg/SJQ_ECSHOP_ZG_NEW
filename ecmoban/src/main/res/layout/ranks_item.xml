@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dim110"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/first_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:visibility="gone"
+        android:background="@color/line_long_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+       <ImageView
+           android:id="@+id/iv_check"
+           android:layout_width="@dimen/dim110"
+           android:layout_height="@dimen/dim110"
+           android:src="@drawable/goods_cb_unchecked"
+           android:padding="@dimen/dim35"
+
+           />
+        <TextView
+            android:id="@+id/tv_rank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/txt32" />
+
+        </LinearLayout>
+    <View
+        android:id="@+id/bottom_short_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:layout_marginLeft="@dimen/dim110"
+        android:background="@color/line_long_dark" />
+    <View
+        android:id="@+id/bottom_long_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dim1"
+        android:visibility="gone"
+        android:background="@color/line_long_dark" />
+
+
+</LinearLayout>

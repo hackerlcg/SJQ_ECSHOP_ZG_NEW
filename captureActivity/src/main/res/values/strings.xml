@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scanning_unusual">Results abnormal</string>
+    <string name="scanning_exist_unusual">Results abnormal</string>
+    <string name="scanning_finish">Finish</string>
+    <string name="scanning_zxing">Scan QR Code</string>
+    <string name="scanning_zxing_content">Scan QR Code</string>
+    <string name="scanning_back_home">Enter</string>
+
+</resources>

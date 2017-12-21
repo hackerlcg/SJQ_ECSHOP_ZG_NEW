@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim90"
+        android:paddingLeft="@dimen/dim40"
+        android:paddingRight="@dimen/dim0"
+        android:gravity="center_vertical"
+        android:text="@string/this_month"
+        android:background="@color/color_b"
+        android:textColor="@color/text_login_color"
+        android:textSize="@dimen/txt30" />
+    <View
+        android:id="@+id/item_top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/line_long_dark" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim140"
+        android:layout_marginLeft="@dimen/dim40"
+        android:layout_marginRight="@dimen/dim40"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_week_time"
+                android:layout_width="@dimen/dim90"
+                android:layout_height="0dp"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:textColor="@color/text_login_hint_color"
+                android:textSize="@dimen/txt32" />
+
+            <TextView
+                android:id="@+id/tv_hour_time"
+                android:layout_width="@dimen/dim90"
+                android:layout_height="0dp"
+                android:gravity="top"
+                android:layout_weight="1"
+                android:textColor="@color/text_login_hint_color"
+                android:textSize="@dimen/txt28" />
+        </LinearLayout>
+
+        <com.ecjia.component.imagecircle.CircleImage
+            android:id="@+id/iv_type"
+            android:layout_width="@dimen/dim90"
+            android:layout_height="@dimen/dim90"
+            android:layout_marginLeft="@dimen/dim20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dim20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dim10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="@dimen/dim450"
+                android:layout_height="@dimen/dim0"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_login_color"
+                android:textSize="@dimen/txt35" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="@dimen/dim450"
+                android:layout_height="@dimen/dim0"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dim10"
+                android:gravity="top"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/text_login_hint_color"
+                android:textSize="@dimen/txt25" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/line_long_dark" />
+
+
+</LinearLayout>
